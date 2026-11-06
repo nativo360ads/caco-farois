@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Caco Faróis | Faróis, Lanternas e Recuperação em São Luís</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Caco Faróis: faróis e lanternas para carros nacionais e elétricos, lentes de todas as marcas e recuperação de faróis com garantia. Chame no WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A0B0D">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Caco Faróis · Faróis, lanternas e recuperação">
+<meta property="og:description" content="Mande o modelo do seu carro no WhatsApp e peça seu orçamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: página de links em coluna única (máx. 520px), estilo Toda Fina — fundo escuro e um feixe de farol em âmbar atrás do logo. */
+:root{
+  --bg:#050607; --panel:#0E1013; --panel-2:#14171B; --line:#262A31;
+  --beam:#FFC21A; --beam-2:#F29A00; --gold2:#C99A12; --text:#F3F4F6; --muted:#9BA1AB; --wa:#25D366;
+  --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Barlow",Arial,Helvetica,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
+@media(min-width:521px){body{background:#0B0C0E}}
+.site{width:100%;max-width:520px;margin:0 auto;min-height:100vh;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#0A0B0D 0%,#050607 100%)}
+@media(min-width:521px){.site{box-shadow:0 0 70px #000}}
+/* vídeo de fundo */
+.bg-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.bg-shade{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(5,6,7,.55) 0%,rgba(5,6,7,.72) 45%,rgba(5,6,7,.92) 100%)}
+.site{display:flex;flex-direction:column}
+.wrap{flex:1;display:flex;flex-direction:column;justify-content:center}
+/* feixe de luz do farol */
+.site::before{content:"";position:absolute;z-index:0;left:50%;top:-40px;width:760px;height:520px;transform:translateX(-50%);pointer-events:none;
+  background:radial-gradient(ellipse 46% 52% at 50% 26%,rgba(255,178,26,.20),rgba(255,178,26,.05) 55%,transparent 72%)}
+.wrap{position:relative;z-index:1;padding-block:44px 96px;padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
+
+/* logo */
+.hero{text-align:center;padding-bottom:28px}
+.logo-stage{width:min(300px,82%);margin:0 auto 22px;animation:logoEnter 1s cubic-bezier(.2,.8,.2,1) both}
+.logo{display:block;width:100%;height:auto;filter:drop-shadow(0 6px 22px rgba(255,178,26,.35)) drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+@keyframes logoEnter{0%{opacity:0;transform:scale(.75)}70%{opacity:1;transform:scale(1.04)}100%{transform:scale(1)}}
+.hero h1{font:800 clamp(1.7rem,7.2vw,2.15rem)/1.02 var(--display);letter-spacing:.01em;text-transform:uppercase;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--beam)}
+.hero p{margin-top:10px;font-size:.78rem;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,178,26,.55),transparent);margin:0 0 24px}
+
+/* botões */
+.links{display:grid;gap:15px}
+.link{width:100%;min-height:65px;border:1px solid var(--gold2);border-radius:10px;background:linear-gradient(180deg,rgba(17,17,17,.94),rgba(11,11,11,.94));
+  display:flex;align-items:center;padding:12px 15px;color:#f4f1ea;text-decoration:none;box-shadow:0 8px 28px rgba(0,0,0,.22);transition:.2s ease}
+.link:hover{border-color:var(--beam)}
+.link:active{transform:scale(.985);background:#141414}
+.link:focus-visible{outline:3px solid var(--beam);outline-offset:3px}
+.icon{width:38px;min-width:38px;height:38px;display:grid;place-items:center;color:var(--beam);margin-right:11px}
+.icon svg{width:31px;height:31px;display:block}
+.icon-wa{color:var(--beam)}
+.icon-wa svg{width:30px;height:30px}
+.label{flex:1;min-width:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:.045em;text-transform:uppercase;line-height:1.3}
+.label small{display:none}
+.chev{display:none}
+.link.main .label{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;font-size:12px;line-height:1.2}
+.link.main .label small{display:block;font-size:9.5px;line-height:1.35;font-weight:400;letter-spacing:0;color:#c9c5bc;text-transform:none;max-width:310px}
+.link.main .label em{font-size:9px;line-height:1.2;font-style:normal;font-weight:800;letter-spacing:.06em;color:var(--beam);margin-top:2px}
+
+.section-label{font:700 .72rem/1 var(--display);letter-spacing:.26em;text-transform:uppercase;color:var(--beam);text-align:center;margin:28px 0 12px}
+
+.pay{margin-top:26px;border:1px dashed var(--line);border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.86rem}
+.pay svg{width:22px;height:22px;color:var(--beam);flex:none}
+.pay b{color:var(--text);font-weight:600}
+
+.footer{text-align:center;color:#5F646C;font:600 .72rem/1.7 var(--display);letter-spacing:.16em;text-transform:uppercase;padding-top:30px}
+.footer a{color:inherit}
+
+/* Instagram flutuante */
+.ig-float{position:fixed;right:max(calc(18px + env(safe-area-inset-right,0px)),calc((100vw - 520px)/2 + 18px));bottom:calc(20px + env(safe-area-inset-bottom,0px));
+  width:58px;height:58px;border-radius:50%;background:var(--beam);color:#111;display:grid;place-items:center;z-index:50;
+  box-shadow:0 10px 28px rgba(0,0,0,.5),0 0 0 3px rgba(255,178,26,.18);transition:transform .15s ease}
+.ig-float:active{transform:scale(.94)}
+.ig-float svg{width:28px;height:28px}
+
+[data-pendente]{pointer-events:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="site">
+<!-- Vídeo de fundo: coloque fundo.mp4 (e fundo.jpg como capa) na mesma pasta -->
+<video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="fundo.jpg" aria-hidden="true">
+  <source src="fundo.mp4" type="video/mp4">
+</video>
+<div class="bg-shade"></div>
+<div class="wrap">
+
+<header class="hero">
+  <div class="logo-stage"><img class="logo" src="logo.png" width="682" height="176" alt="Caco Faróis"></div>
+  <h1>Seu farol <em>novo de novo</em></h1>
+  <p>Venda e recuperação de faróis e lanternas</p>
+</header>
+
+
+<div class="divider"></div>
+
+<nav class="links" aria-label="Links da Caco Faróis">
+  <a class="link main" data-wa="Olá! Vim pelo site da Caco Faróis e quero um orçamento. Modelo e ano do carro: " target="_blank" rel="noopener">
+    <span class="icon icon-wa"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></span>
+    <span class="label"><strong>Chamar no WhatsApp</strong>
+      <small>Mande uma foto do farol e o modelo do carro</small>
+      <em>PEDIR ORÇAMENTO →</em></span>
+  </a>
+
+  <a class="link" data-ig target="_blank" rel="noopener">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+    <span class="label">Siga no Instagram<small>Veja o antes e depois dos nossos serviços</small></span>
+    <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></span>
+  </a>
+
+  <a class="link" data-map target="_blank" rel="noopener">
+    <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+    <span class="label">Localização da loja<small>Como chegar pelo Google Maps</small></span>
+    <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></span>
+  </a>
+</nav>
+
+
+<footer class="footer">Caco Faróis · São Luís - MA<br>Site por <a href="https://www.instagram.com/nativo360ads/" target="_blank" rel="noopener">Nativo 360°</a></footer>
+</div>
+</main>
+
+
+<script>
+/* ===== CONFIGURAÇÃO: preencha os 3 dados e pronto ===== */
+const CACO = {
+  whatsapp: "",   // só números com DDI e DDD. Ex.: "5598900000000"
+  instagram: "",  // usuário sem @. Ex.: "cacofarois"
+  maps: ""        // link do Google Maps. Ex.: "https://maps.app.goo.gl/..."
+};
+/* ====================================================== */
+document.querySelectorAll("[data-wa]").forEach(a => {
+  if (CACO.whatsapp) a.href = "https://wa.me/" + CACO.whatsapp + "?text=" + encodeURIComponent(a.dataset.wa);
+  else a.setAttribute("data-pendente", "");
+});
+document.querySelectorAll("[data-ig]").forEach(a => {
+  if (CACO.instagram) a.href = "https://www.instagram.com/" + CACO.instagram + "/";
+  else a.setAttribute("data-pendente", "");
+});
+document.querySelectorAll("[data-map]").forEach(a => {
+  if (CACO.maps) a.href = CACO.maps;
+  else a.setAttribute("data-pendente", "");
+});
+</script>
+</body>
+</html>
